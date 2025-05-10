@@ -11,3 +11,8 @@
 点击具体的案例，进入改案例的在线代码编辑器界面，左侧是代码展现和编辑区域，右侧是实时编译的效果呈现区域，底部是控制台，可以打印输出，供调试使用：
 
 ![image-20250510211503029](public/image-20250510211503029.png)
+
+项目中使用到的静态资源（二维图片和三维模型）存放在以下的仓库中，是加载资源仓库获取资源的：
+
+- [JinLinC0/Cesium-assets: Cesium图片和3D资源仓库](https://github.com/JinLinC0/Cesium-assets)
+- [Cesium-assets: Cesium图片和3D资源仓库](https://gitee.com/JinLinC/cesium-assets)
