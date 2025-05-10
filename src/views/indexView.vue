@@ -130,58 +130,6 @@ function indexBtn(id) {
 }
 </script>
 
-<!-- <style lang="scss" scoped>
-.app-continer {
-    width: 100%;
-    height: 100%;
-
-    div {
-        width: 100%;
-        height: 100%;
-
-        .text-base {
-            color: rgb(255, 255, 255);
-        }
-
-        .flex-container {
-            background-color: rgb(33.2, 61.4, 90.5);
-            display: flex;
-            flex-wrap: wrap;
-            /* 允许换行 */
-            gap: 10px;
-
-            /* 元素间距（可选） */
-            .flex-item {
-                background-color: rgb(33.2, 61.4, 90.5);
-                flex: 1 0 calc(25% - 10px);
-                /* 3列，减去间距 */
-                min-width: 0;
-                /* 防止内容溢出（可选） */
-                box-sizing: border-box;
-                /* 确保 padding 不影响宽度计算 */
-                padding: 5px;
-                transition: background-color 0.3s;
-
-                div {
-                    color: rgb(255, 255, 255); // 明确设置项目标题为白色
-                }
-
-                img {
-                    margin-top: 5px;
-                    width: 100%;
-                }
-
-                &:hover {
-                    background-color: rgb(42, 89, 137.5);
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-}
-</style> -->
-
-
 <style lang="scss" scoped>
 .app-continer {
     width: 100%;
@@ -200,12 +148,15 @@ function indexBtn(id) {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            padding: 10px; /* 添加内边距 */
+            padding: 10px;
+            /* 添加内边距 */
 
             .flex-item {
                 background-color: rgb(33.2, 61.4, 90.5);
-                flex: 0 0 calc(25% - 10px); /* 固定宽度，不伸缩 */
-                max-width: calc(25% - 10px); /* 确保最大宽度不超过25% */
+                flex: 0 0 calc(25% - 10px);
+                /* 固定宽度，不伸缩 */
+                max-width: calc(25% - 10px);
+                /* 确保最大宽度不超过25% */
                 min-width: 0;
                 box-sizing: border-box;
                 padding: 5px;
@@ -213,15 +164,27 @@ function indexBtn(id) {
 
                 div {
                     color: rgb(255, 255, 255);
-                    white-space: nowrap; /* 防止文字换行 */
+                    white-space: nowrap;
+                    /* 防止文字换行 */
                     overflow: hidden;
-                    text-overflow: ellipsis; /* 文字过长显示省略号 */
+                    text-overflow: ellipsis;
+                    /* 文字过长显示省略号 */
+                    text-align: center;
+                    /* 水平居中 */
+                    display: flex;
+                    /* 启用 flexbox */
+                    align-items: center;
+                    /* 垂直居中 */
+                    justify-content: center;
+                    /* 水平居中 */
+                    height: 100%;
                 }
 
                 img {
                     margin-top: 5px;
                     width: 100%;
-                    height: auto; /* 保持图片比例 */
+                    height: auto;
+                    /* 保持图片比例 */
                 }
 
                 &:hover {
