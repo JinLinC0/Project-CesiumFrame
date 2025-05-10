@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@codesandbox/sandpack-react": "^2.18.0",
+    "@codesandbox/sandpack-themes": "^2.0.21",
     "@element-plus/icons-vue": "^2.3.1",
     "@swc/core": "^1.6.13",
     "cesium": "1.99",

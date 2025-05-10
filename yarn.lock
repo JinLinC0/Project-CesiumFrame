@@ -158,6 +158,11 @@
     react-devtools-inline "4.4.0"
     react-is "^17.0.2"
 
+"@codesandbox/sandpack-themes@^2.0.21":
+  version "2.0.21"
+  resolved "https://registry.npmmirror.com/@codesandbox/sandpack-themes/-/sandpack-themes-2.0.21.tgz"
+  integrity sha512-CMH/MO/dh6foPYb/3eSn2Cu/J3+1+/81Fsaj7VggICkCrmRk0qG5dmgjGAearPTnRkOGORIPHuRqwNXgw0E6YQ==
+
 "@ctrl/tinycolor@^3.4.1":
   version "3.6.1"
   resolved "https://registry.npmmirror.com/@ctrl/tinycolor/-/tinycolor-3.6.1.tgz"

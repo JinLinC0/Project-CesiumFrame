@@ -1,7 +1,8 @@
 <template>
     <div class="app-continer">
-        <SandpackProvider template="vue3" style="width: 100%; height: 100%;" :files="files">
+        <SandpackProvider template="vue3" style="width: 100%; height: 100%;" :files="files" :theme="nightOwl">
             <SandpackLayout class="h-[80%] w-full">
+                <!--菜单栏-->
                 <!-- <div>
                     <SandpackFileExplorer />
                 </div> -->
@@ -9,12 +10,16 @@
                 <SandpackPreview style="height: 100%;" />
             </SandpackLayout>
             <SandpackLayout class="h-[20%] w-full">
-                <SandpackConsole style="height: 100%;" class="bg-zinc-100" />
+                <SandpackConsole style="height: 100%;" />
             </SandpackLayout>
         </SandpackProvider>
     </div>
     <div class="btn-class">
-        <el-button @click="indexBtn">回到首页</el-button>
+        <el-button @click="indexBtn" style="background-color: rgb(33.2, 61.4, 90.5); border: 0cap;">
+            <span style="color: aliceblue;">
+                回到首页
+            </span>
+        </el-button>
     </div>
 </template>
 
@@ -24,6 +29,7 @@ import { ref, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { findVueCodeById } from '@/examples/CodeMap.js';
 import { findFunctionCodeById } from '@/examples/FunctionMap.js';
+import { nightOwl } from "@codesandbox/sandpack-themes";
  
 const route = useRoute()
 const router = useRouter()
