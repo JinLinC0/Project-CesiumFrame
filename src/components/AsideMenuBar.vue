@@ -6,85 +6,6 @@
                     <img src="@/assets/vue.svg" alt="">
                     <h1> + Cesium</h1>
                 </a>
-                <el-sub-menu index="1">
-                    <template #title>
-                        <el-icon>
-                            <MapLocation />
-                        </el-icon>
-                        <span>太空任务</span>
-                    </template>
-                    <el-menu-item v-for="item in elementSpaceMissions" :key="item.id" :index="item.title"
-                        @click="goAnchor(item.title)">
-                        <el-icon>
-                            <View />
-                        </el-icon>
-                        <span>{{ item.title }}</span>
-                    </el-menu-item>
-                </el-sub-menu>
-
-                <el-sub-menu index="6">
-                    <template #title>
-                        <el-icon>
-                            <Grid />
-                        </el-icon>
-                        <span>测站</span>
-                    </template>
-                    <el-menu-item v-for="item in elementStation" :key="item.id" :index="item.title"
-                        @click="goAnchor(item.title)">
-                        <el-icon>
-                            <View />
-                        </el-icon>
-                        <span>{{ item.title }}</span>
-                    </el-menu-item>
-                </el-sub-menu>
-
-                <el-sub-menu index="7">
-                    <template #title>
-                        <el-icon>
-                            <Grid />
-                        </el-icon>
-                        <span>动目标</span>
-                    </template>
-                    <el-menu-item v-for="item in elementMoving" :key="item.id" :index="item.title"
-                        @click="goAnchor(item.title)">
-                        <el-icon>
-                            <View />
-                        </el-icon>
-                        <span>{{ item.title }}</span>
-                    </el-menu-item>
-                </el-sub-menu>
-
-                <el-sub-menu index="8">
-                    <template #title>
-                        <el-icon>
-                            <Grid />
-                        </el-icon>
-                        <span>可见性</span>
-                    </template>
-                    <el-menu-item v-for="item in elementVisible" :key="item.id" :index="item.title"
-                        @click="goAnchor(item.title)">
-                        <el-icon>
-                            <View />
-                        </el-icon>
-                        <span>{{ item.title }}</span>
-                    </el-menu-item>
-                </el-sub-menu>
-
-                <el-sub-menu index="9">
-                    <template #title>
-                        <el-icon>
-                            <Grid />
-                        </el-icon>
-                        <span>特效</span>
-                    </template>
-                    <el-menu-item v-for="item in elementSpecialEffect" :key="item.id" :index="item.title"
-                        @click="goAnchor(item.title)">
-                        <el-icon>
-                            <View />
-                        </el-icon>
-                        <span>{{ item.title }}</span>
-                    </el-menu-item>
-                </el-sub-menu>
 
                 <el-sub-menu index="10">
                     <template #title>
@@ -94,6 +15,22 @@
                         <span>图元</span>
                     </template>
                     <el-menu-item v-for="item in elementGraphic" :key="item.id" :index="item.title"
+                        @click="goAnchor(item.title)">
+                        <el-icon>
+                            <View />
+                        </el-icon>
+                        <span>{{ item.title }}</span>
+                    </el-menu-item>
+                </el-sub-menu>
+
+                <el-sub-menu index="18">
+                    <template #title>
+                        <el-icon>
+                            <Switch />
+                        </el-icon>
+                        <span>内置算法</span>
+                    </template>
+                    <el-menu-item v-for="item in elementAlgorithm" :key="item.id" :index="item.title"
                         @click="goAnchor(item.title)">
                         <el-icon>
                             <View />
@@ -121,7 +58,7 @@
                 <el-sub-menu index="14">
                     <template #title>
                         <el-icon>
-                            <MapLocation />
+                            <HelpFilled />
                         </el-icon>
                         <span>相机</span>
                     </template>
@@ -137,7 +74,7 @@
                 <el-sub-menu index="15">
                     <template #title>
                         <el-icon>
-                            <SemiSelect />
+                            <PartlyCloudy />
                         </el-icon>
                         <span>天气</span>
                     </template>
@@ -150,14 +87,46 @@
                     </el-menu-item>
                 </el-sub-menu>
 
-                <el-sub-menu index="18">
+                <el-sub-menu index="7">
                     <template #title>
                         <el-icon>
-                            <SemiSelect />
+                            <Promotion />
                         </el-icon>
-                        <span>内置算法</span>
+                        <span>动目标</span>
                     </template>
-                    <el-menu-item v-for="item in elementAlgorithm" :key="item.id" :index="item.title"
+                    <el-menu-item v-for="item in elementMoving" :key="item.id" :index="item.title"
+                        @click="goAnchor(item.title)">
+                        <el-icon>
+                            <View />
+                        </el-icon>
+                        <span>{{ item.title }}</span>
+                    </el-menu-item>
+                </el-sub-menu>
+
+                <el-sub-menu index="6">
+                    <template #title>
+                        <el-icon>
+                            <Grid />
+                        </el-icon>
+                        <span>测站</span>
+                    </template>
+                    <el-menu-item v-for="item in elementStation" :key="item.id" :index="item.title"
+                        @click="goAnchor(item.title)">
+                        <el-icon>
+                            <View />
+                        </el-icon>
+                        <span>{{ item.title }}</span>
+                    </el-menu-item>
+                </el-sub-menu>
+
+                <el-sub-menu index="1">
+                    <template #title>
+                        <el-icon>
+                            <Flag />
+                        </el-icon>
+                        <span>太空任务</span>
+                    </template>
+                    <el-menu-item v-for="item in elementSpaceMissions" :key="item.id" :index="item.title"
                         @click="goAnchor(item.title)">
                         <el-icon>
                             <View />
@@ -173,14 +142,12 @@
 
 <script setup>
 import { ref } from 'vue';
-import { MapLocation, SemiSelect, Grid, View } from "@element-plus/icons-vue";
-import { elementSpaceMissionsMap, elementStationMap, elementMovingMap, elementVisibleMap, elementSpecialEffectMap, elementGraphicMap, elementSceneSetMap, elementCameraMap, elementWeatherMap, elementAlgorithmMap } from '@/views/ElementMap';
+import { MapLocation, SemiSelect, Grid, View, Switch, PartlyCloudy, Promotion, HelpFilled, Flag } from "@element-plus/icons-vue";
+import { elementSpaceMissionsMap, elementStationMap, elementMovingMap, elementGraphicMap, elementSceneSetMap, elementCameraMap, elementWeatherMap, elementAlgorithmMap } from '@/views/ElementMap';
 
 const elementSpaceMissions = ref()
 const elementStation = ref()
 const elementMoving = ref()
-const elementVisible = ref()
-const elementSpecialEffect = ref()
 const elementGraphic = ref()
 const elementSceneSet = ref()
 const elementCamera = ref()
@@ -190,8 +157,6 @@ const elementAlgorithm = ref()
 elementSpaceMissions.value = elementSpaceMissionsMap;
 elementStation.value = elementStationMap;
 elementMoving.value = elementMovingMap;
-elementVisible.value = elementVisibleMap;
-elementSpecialEffect.value = elementSpecialEffectMap;
 elementGraphic.value = elementGraphicMap;
 elementSceneSet.value = elementSceneSetMap;
 elementCamera.value = elementCameraMap;
@@ -262,6 +227,7 @@ $collapsed-width: 60px;
                         color: #000;
                     }
                 }
+
                 .el-menu-item {
                     color: rgb(255, 255, 255);
                     background-color: rgb(37, 56, 78);

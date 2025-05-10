@@ -5,6 +5,7 @@ import vueCodeSunTrack from '@/examples/spaceMissions/sunTrack/sunTrack.vue?raw'
 // 测站
 import vueCodeAddStation from '@/examples/measureStation/addStation/addStation.vue?raw'
 import vueCodeStationCoordinate from '@/examples/measureStation/stationCoordinate/stationCoordinate.vue?raw'
+import vueCodeSpecifyConnectionType from '@/examples/measureStation/specifyConnectionType/specifyConnectionType.vue?raw'
 
 // 动目标
 import vueCodeVehicle from '@/examples/movingTarget/vehicle/vehicle.vue?raw'
@@ -22,9 +23,6 @@ import vueCodeMissileMobileLaunch from '@/examples/movingTarget/missileMobileLau
 import vueCodeRocketLaunch from '@/examples/movingTarget/rocketLaunch/rocketLaunch.vue?raw'
 import vueCodeRocketLaunchIntoOrbit from '@/examples/movingTarget/rocketLaunchIntoOrbit/rocketLaunchIntoOrbit.vue?raw'
 import vueCodeGetNodes from '@/examples/movingTarget/getNodes/getNodes.vue?raw'
-
-// 可见性
-import vueCodeSpecifyConnectionType from '@/examples/visible/specifyConnectionType/specifyConnectionType.vue?raw'
 
 // 图元
 import vueCodePoint from '@/examples/graphicElement/point/point.vue?raw'
@@ -76,6 +74,7 @@ const vueCodeMap = {
     // 测站
     添加测站: vueCodeAddStation,
     测站坐标系: vueCodeStationCoordinate,
+    指定连接类型: vueCodeSpecifyConnectionType,
 
     // 动目标
     车: vueCodeVehicle,
@@ -93,9 +92,6 @@ const vueCodeMap = {
     火箭发射: vueCodeRocketLaunch,
     火箭发射卫星入轨: vueCodeRocketLaunchIntoOrbit,
     获取模型节点数: vueCodeGetNodes,
-
-    // 可见性
-    指定连接类型: vueCodeSpecifyConnectionType,
 
     // 图元
     点: vueCodePoint,

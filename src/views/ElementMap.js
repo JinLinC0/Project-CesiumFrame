@@ -19,6 +19,10 @@ export const elementStationMap = {
     测站坐标系: {
         title: '测站坐标系',
         pngUrl: '/src/assets/StationCoordinate.png'
+    },
+    指定连接类型: {
+        title: '指定连接类型',
+        pngUrl: '/src/assets/SpecifyConnectionType.png'
     }
 }
 
@@ -82,22 +86,6 @@ export const elementMovingMap = {
     },
     获取模型节点数: {
         title: '获取模型节点数',
-        pngUrl: '/src/assets/RocketLaunchIntoOrbit.png'
-    }
-}
-
-// 可见性
-export const elementVisibleMap = {
-    指定连接类型: {
-        title: '指定连接类型',
-        pngUrl: '/src/assets/SpecifyConnectionType.png'
-    }
-}
-
-// 特效
-export const elementSpecialEffectMap = {
-    激光: {
-        title: '激光',
         pngUrl: '/src/assets/RocketLaunchIntoOrbit.png'
     }
 }

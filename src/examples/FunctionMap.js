@@ -5,6 +5,7 @@ import functionCodeSunTrack from '@/examples/spaceMissions/sunTrack/sunTrack-fun
 // 测站
 import functionCodeAddStation from '@/examples/measureStation/addStation/addStation.js?raw'
 import functionCodeStationCoordinate from '@/examples/measureStation/stationCoordinate/stationCoordinate-function.js?raw'
+import functionCodeSpecifyConnectionType from '@/examples/measureStation/specifyConnectionType/specifyConnectionType-function.js?raw'
 
 // 动目标
 import functionCodeVehicle from '@/examples/movingTarget/vehicle/vehicle-function.js?raw'
@@ -22,9 +23,6 @@ import functionCodeMissileMobileLaunch from '@/examples/movingTarget/missileMobi
 import functionCodeRocketLaunch from '@/examples/movingTarget/rocketLaunch/rocketLaunch-function.js?raw'
 import functionCodeRocketLaunchIntoOrbit from '@/examples/movingTarget/rocketLaunchIntoOrbit/rocketLaunchIntoOrbit-function.js?raw'
 import functionCodeGetNodes from '@/examples/movingTarget/getNodes/getNodes-function.js?raw'
-
-// 可见性
-import functionCodeSpecifyConnectionType from '@/examples/visible/specifyConnectionType/specifyConnectionType-function.js?raw'
 
 // 图元
 import functionCodePoint from '@/examples/graphicElement/point/point-function.js?raw'
@@ -76,6 +74,7 @@ const functionCodeMap = {
     // 测站
     添加测站: functionCodeAddStation,
     测站坐标系: functionCodeStationCoordinate,
+    指定连接类型: functionCodeSpecifyConnectionType,
 
     // 动目标
     车: functionCodeVehicle,
@@ -93,9 +92,6 @@ const functionCodeMap = {
     火箭发射: functionCodeRocketLaunch,
     火箭发射卫星入轨: functionCodeRocketLaunchIntoOrbit,
     获取模型节点数: functionCodeGetNodes,
-
-    // 可见性
-    指定连接类型: functionCodeSpecifyConnectionType,
 
     // 图元
     点: functionCodePoint,

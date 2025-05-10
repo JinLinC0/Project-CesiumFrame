@@ -1,56 +1,18 @@
 <template>
     <div class="app-continer">
-        <div class="mt-5">
-            <span class="text-base font-bold">太空任务</span>
-            <div class="flex-container">
-                <div v-for="item in elementSpaceMissions" :key="item.id" @click="indexBtn(item.title)"
-                    class="flex-item">
-                    <div :id="item.title">{{ item.title }}</div>
-                    <img :src="item.pngUrl" width="250">
-                </div>
-            </div>
-        </div>
-        <div class="mt-10">
-            <span class="text-base font-bold">测站</span>
-            <div class="flex-container">
-                <div v-for="item in elementStation" :key="item.id" @click="indexBtn(item.title)" class="flex-item">
-                    <div :id="item.title">{{ item.title }}</div>
-                    <img :src="item.pngUrl" width="250">
-                </div>
-            </div>
-        </div>
-        <div class="mt-10">
-            <span class="text-base font-bold">动目标</span>
-            <div class="flex-container">
-                <div v-for="item in elementMoving" :key="item.id" @click="indexBtn(item.title)" class="flex-item">
-                    <div :id="item.title">{{ item.title }}</div>
-                    <img :src="item.pngUrl" width="250">
-                </div>
-            </div>
-        </div>
-        <div class="mt-10">
-            <span class="text-base font-bold">可见性</span>
-            <div class="flex-container">
-                <div v-for="item in elementVisible" :key="item.id" @click="indexBtn(item.title)" class="flex-item">
-                    <div :id="item.title">{{ item.title }}</div>
-                    <img :src="item.pngUrl" width="250">
-                </div>
-            </div>
-        </div>
-        <div class="mt-10">
-            <span class="text-base font-bold">特效</span>
-            <div class="flex-container">
-                <div v-for="item in elementSpecialEffect" :key="item.id" @click="indexBtn(item.title)"
-                    class="flex-item">
-                    <div :id="item.title">{{ item.title }}</div>
-                    <img :src="item.pngUrl" width="250">
-                </div>
-            </div>
-        </div>
         <div class="mt-10">
             <span class="text-base font-bold">图元</span>
             <div class="flex-container">
                 <div v-for="item in elementGraphic" :key="item.id" @click="indexBtn(item.title)" class="flex-item">
+                    <div :id="item.title">{{ item.title }}</div>
+                    <img :src="item.pngUrl" width="250">
+                </div>
+            </div>
+        </div>
+        <div class="mt-10">
+            <span class="text-base font-bold">内置算法</span>
+            <div class="flex-container">
+                <div v-for="item in elementAlgorithm" :key="item.id" @click="indexBtn(item.title)" class="flex-item">
                     <div :id="item.title">{{ item.title }}</div>
                     <img :src="item.pngUrl" width="250">
                 </div>
@@ -84,9 +46,28 @@
             </div>
         </div>
         <div class="mt-10">
-            <span class="text-base font-bold">内置算法</span>
+            <span class="text-base font-bold">动目标</span>
             <div class="flex-container">
-                <div v-for="item in elementAlgorithm" :key="item.id" @click="indexBtn(item.title)" class="flex-item">
+                <div v-for="item in elementMoving" :key="item.id" @click="indexBtn(item.title)" class="flex-item">
+                    <div :id="item.title">{{ item.title }}</div>
+                    <img :src="item.pngUrl" width="250">
+                </div>
+            </div>
+        </div>
+        <div class="mt-10">
+            <span class="text-base font-bold">测站</span>
+            <div class="flex-container">
+                <div v-for="item in elementStation" :key="item.id" @click="indexBtn(item.title)" class="flex-item">
+                    <div :id="item.title">{{ item.title }}</div>
+                    <img :src="item.pngUrl" width="250">
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <span class="text-base font-bold">太空任务</span>
+            <div class="flex-container">
+                <div v-for="item in elementSpaceMissions" :key="item.id" @click="indexBtn(item.title)"
+                    class="flex-item">
                     <div :id="item.title">{{ item.title }}</div>
                     <img :src="item.pngUrl" width="250">
                 </div>
@@ -98,14 +79,12 @@
 <script setup>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
-import { elementSpaceMissionsMap, elementStationMap, elementMovingMap, elementVisibleMap, elementSpecialEffectMap, elementGraphicMap, elementSceneSetMap, elementCameraMap, elementWeatherMap, elementAlgorithmMap } from '@/views/ElementMap';
+import { elementSpaceMissionsMap, elementStationMap, elementMovingMap, elementGraphicMap, elementSceneSetMap, elementCameraMap, elementWeatherMap, elementAlgorithmMap } from '@/views/ElementMap';
 
 const router = useRouter()
 const elementSpaceMissions = ref()
 const elementStation = ref()
 const elementMoving = ref()
-const elementVisible = ref()
-const elementSpecialEffect = ref()
 const elementGraphic = ref()
 const elementSceneSet = ref()
 const elementCamera = ref()
@@ -115,8 +94,6 @@ const elementAlgorithm = ref()
 elementSpaceMissions.value = elementSpaceMissionsMap;
 elementStation.value = elementStationMap;
 elementMoving.value = elementMovingMap;
-elementVisible.value = elementVisibleMap;
-elementSpecialEffect.value = elementSpecialEffectMap;
 elementGraphic.value = elementGraphicMap;
 elementSceneSet.value = elementSceneSetMap;
 elementCamera.value = elementCameraMap;
