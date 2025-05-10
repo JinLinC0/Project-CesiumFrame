@@ -1,17 +1,18 @@
 <template>
-    <el-header>
-        <el-icon @click="toggleCollapse">
+    <el-header style="display: flex; align-items: center;">
+        <!-- <el-icon @click="toggleCollapse">
             <Expand v-show="isCollapse" />
             <Fold v-show="!isCollapse" />
-        </el-icon>
-
+        </el-icon> -->
         <el-breadcrumb separator="/">
             <el-breadcrumb-item :to="{ path: '/' }" class="text-base">首页</el-breadcrumb-item>
         </el-breadcrumb>
 
-        <div style="margin: auto;">
-            <span style="font-size: 20px;">基于VUE的Cesium的在线沙盒系统</span>
+        <div style="flex: 1; text-align: center;">
+            <span style="font-size: 20px;">基于VUE的Cesium在线沙盒系统</span>
         </div>
+
+        <span class="text-xs" style="color: #8a8a8a">tips: 由于资源的内容存放在github上，加载可能出错或过慢，有条件可挂vpn</span>
     </el-header>
 </template>
 
@@ -23,7 +24,7 @@ import { UploadFilled } from '@element-plus/icons-vue';
 
 const props = defineProps({
     isCollapse: {
-      type: Boolean,
+        type: Boolean,
     }
 });
 const emit = defineEmits(['update:isCollapse']);
@@ -43,13 +44,13 @@ const toggleCollapse = () => {
 };
 
 // 打开添加案例对话框
-function showAddCaseDialog(){
+function showAddCaseDialog() {
     dialogVisible.value = true;
     caseName.value = '';
 }
 
 // 添加案例函数
-function addCase(){
+function addCase() {
     const newCase = {
         title: caseName.value,
         pngUrl: imageUrl.value
@@ -59,11 +60,12 @@ function addCase(){
 </script>
 
 <style lang="scss" scoped>
-.el-header{
+.el-header {
     display: flex;
     align-items: center;
     background-color: #dedfe0;
-    .el-icon{
+
+    .el-icon {
         margin-right: 15px;
     }
 }
