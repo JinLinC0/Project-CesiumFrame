@@ -2,90 +2,92 @@
     <div class="app-continer">
         <div class="mt-5">
             <span class="text-base font-bold">太空任务</span>
-            <div style="overflow-y: auto" class="container">
-                <div v-for="item in elementSpaceMissions" :key="item.id" @click="indexBtn(item.title)" class="item-container">
-                    <div :id="item.title">{{item.title}}</div>
+            <div class="flex-container">
+                <div v-for="item in elementSpaceMissions" :key="item.id" @click="indexBtn(item.title)"
+                    class="flex-item">
+                    <div :id="item.title">{{ item.title }}</div>
                     <img :src="item.pngUrl" width="250">
                 </div>
             </div>
         </div>
         <div class="mt-10">
             <span class="text-base font-bold">测站</span>
-            <div style="overflow-y: auto" class="container">
-                <div v-for="item in elementStation" :key="item.id" @click="indexBtn(item.title)" class="item-container">
-                    <div :id="item.title">{{item.title}}</div>
+            <div class="flex-container">
+                <div v-for="item in elementStation" :key="item.id" @click="indexBtn(item.title)" class="flex-item">
+                    <div :id="item.title">{{ item.title }}</div>
                     <img :src="item.pngUrl" width="250">
                 </div>
             </div>
         </div>
         <div class="mt-10">
             <span class="text-base font-bold">动目标</span>
-            <div style="overflow-y: auto" class="container">
-                <div v-for="item in elementMoving" :key="item.id" @click="indexBtn(item.title)" class="item-container">
-                    <div :id="item.title">{{item.title}}</div>
+            <div class="flex-container">
+                <div v-for="item in elementMoving" :key="item.id" @click="indexBtn(item.title)" class="flex-item">
+                    <div :id="item.title">{{ item.title }}</div>
                     <img :src="item.pngUrl" width="250">
                 </div>
             </div>
         </div>
         <div class="mt-10">
             <span class="text-base font-bold">可见性</span>
-            <div style="overflow-y: auto" class="container">
-                <div v-for="item in elementVisible" :key="item.id" @click="indexBtn(item.title)" class="item-container">
-                    <div :id="item.title">{{item.title}}</div>
+            <div class="flex-container">
+                <div v-for="item in elementVisible" :key="item.id" @click="indexBtn(item.title)" class="flex-item">
+                    <div :id="item.title">{{ item.title }}</div>
                     <img :src="item.pngUrl" width="250">
                 </div>
             </div>
         </div>
         <div class="mt-10">
             <span class="text-base font-bold">特效</span>
-            <div style="overflow-y: auto" class="container">
-                <div v-for="item in elementSpecialEffect" :key="item.id" @click="indexBtn(item.title)" class="item-container">
-                    <div :id="item.title">{{item.title}}</div>
+            <div class="flex-container">
+                <div v-for="item in elementSpecialEffect" :key="item.id" @click="indexBtn(item.title)"
+                    class="flex-item">
+                    <div :id="item.title">{{ item.title }}</div>
                     <img :src="item.pngUrl" width="250">
                 </div>
             </div>
         </div>
         <div class="mt-10">
             <span class="text-base font-bold">图元</span>
-            <div style="overflow-y: auto" class="container">
-                <div v-for="item in elementGraphic" :key="item.id" @click="indexBtn(item.title)" class="item-container">
-                    <div :id="item.title">{{item.title}}</div>
+            <div class="flex-container">
+                <div v-for="item in elementGraphic" :key="item.id" @click="indexBtn(item.title)" class="flex-item">
+                    <div :id="item.title">{{ item.title }}</div>
                     <img :src="item.pngUrl" width="250">
                 </div>
             </div>
         </div>
         <div class="mt-10">
             <span class="text-base font-bold">场景设置</span>
-            <div style="overflow-y: auto" class="container">
-                <div v-for="item in elementSceneSet" :key="item.id" @click="indexBtn(item.title)" class="item-container">
-                    <div :id="item.title">{{item.title}}</div>
+            <div class="flex-container">
+                <div v-for="item in elementSceneSet" :key="item.id" @click="indexBtn(item.title)" class="flex-item">
+                    <div :id="item.title">{{ item.title }}</div>
                     <img :src="item.pngUrl" width="250">
                 </div>
             </div>
         </div>
         <div class="mt-10">
             <span class="text-base font-bold">相机</span>
-            <div style="overflow-y: auto" class="container">
-                <div v-for="item in elementCamera" :key="item.id" @click="indexBtn(item.title)" class="item-container">
-                    <div :id="item.title">{{item.title}}</div>
+            <div class="flex-container">
+                <div v-for="item in elementCamera" :key="item.id" @click="indexBtn(item.title)" class="flex-item">
+                    <div :id="item.title">{{ item.title }}</div>
                     <img :src="item.pngUrl" width="250">
                 </div>
             </div>
         </div>
         <div class="mt-10">
             <span class="text-base font-bold">天气</span>
-            <div style="overflow-y: auto" class="container">
-                <div v-for="item in elementWeather" :key="item.id" @click="indexBtn(item.title)" class="item-container">
-                    <div :id="item.title">{{item.title}}</div>
+            <div class="flex-container">
+                <div v-for="item in elementWeather" :key="item.id" @click="indexBtn(item.title)" class="flex-item">
+                    <div :id="item.title">{{ item.title }}</div>
                     <img :src="item.pngUrl" width="250">
                 </div>
             </div>
         </div>
         <div class="mt-10">
             <span class="text-base font-bold">内置算法</span>
-            <div style="overflow-y: auto" class="container">
-                <div v-for="item in elementAlgorithm" :key="item.id" @click="indexBtn(item.title)" class="item-container">
-                    <div :id="item.title">{{item.title}}</div>
+            <div class="flex-container">
+                <div v-for="item in elementAlgorithm" :key="item.id" @click="indexBtn(item.title)" class="flex-item">
+                    <div :id="item.title">{{ item.title }}</div>
                     <img :src="item.pngUrl" width="250">
                 </div>
             </div>
@@ -128,27 +130,106 @@ function indexBtn(id) {
 }
 </script>
 
+<!-- <style lang="scss" scoped>
+.app-continer {
+    width: 100%;
+    height: 100%;
+
+    div {
+        width: 100%;
+        height: 100%;
+
+        .text-base {
+            color: rgb(255, 255, 255);
+        }
+
+        .flex-container {
+            background-color: rgb(33.2, 61.4, 90.5);
+            display: flex;
+            flex-wrap: wrap;
+            /* 允许换行 */
+            gap: 10px;
+
+            /* 元素间距（可选） */
+            .flex-item {
+                background-color: rgb(33.2, 61.4, 90.5);
+                flex: 1 0 calc(25% - 10px);
+                /* 3列，减去间距 */
+                min-width: 0;
+                /* 防止内容溢出（可选） */
+                box-sizing: border-box;
+                /* 确保 padding 不影响宽度计算 */
+                padding: 5px;
+                transition: background-color 0.3s;
+
+                div {
+                    color: rgb(255, 255, 255); // 明确设置项目标题为白色
+                }
+
+                img {
+                    margin-top: 5px;
+                    width: 100%;
+                }
+
+                &:hover {
+                    background-color: rgb(42, 89, 137.5);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+</style> -->
+
+
 <style lang="scss" scoped>
-.app-continer{
-    width: 100vw;
-    height: 100vh;
-}
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
+.app-continer {
+    width: 100%;
+    height: 100%;
 
-.item-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  transition: background-color 0.3s; /* 添加过渡效果 */
+    div {
+        width: 100%;
+        height: 100%;
 
-  &:hover {
-    background-color: #e9e7e7;
-    cursor: pointer;
-  }
+        .text-base {
+            color: rgb(255, 255, 255);
+        }
+
+        .flex-container {
+            background-color: rgb(33.2, 61.4, 90.5);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px; /* 添加内边距 */
+
+            .flex-item {
+                background-color: rgb(33.2, 61.4, 90.5);
+                flex: 0 0 calc(25% - 10px); /* 固定宽度，不伸缩 */
+                max-width: calc(25% - 10px); /* 确保最大宽度不超过25% */
+                min-width: 0;
+                box-sizing: border-box;
+                padding: 5px;
+                transition: background-color 0.3s;
+
+                div {
+                    color: rgb(255, 255, 255);
+                    white-space: nowrap; /* 防止文字换行 */
+                    overflow: hidden;
+                    text-overflow: ellipsis; /* 文字过长显示省略号 */
+                }
+
+                img {
+                    margin-top: 5px;
+                    width: 100%;
+                    height: auto; /* 保持图片比例 */
+                }
+
+                &:hover {
+                    background-color: rgb(42, 89, 137.5);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }
 </style>

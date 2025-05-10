@@ -1,15 +1,17 @@
 <template>
-    <el-header style="display: flex; align-items: center;">
+    <el-header style="display: flex; align-items: center; background-color: rgb(28.8, 47.6, 67)">
         <!-- <el-icon @click="toggleCollapse">
             <Expand v-show="isCollapse" />
             <Fold v-show="!isCollapse" />
         </el-icon> -->
         <el-breadcrumb separator="/">
-            <el-breadcrumb-item :to="{ path: '/' }" class="text-base">首页</el-breadcrumb-item>
+            <el-breadcrumb-item :to="{ path: '/' }" class="text-base">
+                <span style="color: rgb(255, 255, 255);">首页</span>
+            </el-breadcrumb-item>
         </el-breadcrumb>
 
         <div style="flex: 1; text-align: center;">
-            <span style="font-size: 20px;">基于VUE的Cesium在线沙盒系统</span>
+            <span style="font-size: 24px; color: rgb(255, 255, 255);">基于VUE的Cesium在线沙盒系统</span>
         </div>
 
         <span class="text-xs" style="color: #8a8a8a">tips: 由于资源的内容存放在github上，加载可能出错或过慢，有条件可挂vpn</span>

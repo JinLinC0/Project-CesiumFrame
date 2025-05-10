@@ -248,10 +248,10 @@ $collapsed-width: 60px;
             .el-sub-menu {
                 :deep(.el-sub-menu__title) {
                     span {
-                        color: #fff;
+                        color: rgb(255, 255, 255);
                     }
                     .el-icon {
-                        color: #00ff00;
+                        color: rgb(64, 184, 130);
                     }
                 }
             }

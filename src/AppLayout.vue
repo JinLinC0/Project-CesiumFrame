@@ -37,7 +37,13 @@ const handleCollapseUpdate = (newCollapseState) => {
   width: 75%;
 }
 .el-main{
-  background-color: #f4f4f5;
+  background-color: rgb(33.2, 61.4, 90.5);
   padding-right: 0;
+  padding-left: 20;
+  padding-top: 5;
+  padding-bottom: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 </style>
