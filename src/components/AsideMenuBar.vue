@@ -229,20 +229,21 @@ $collapsed-width: 60px;
     // 滚动条样式
     .el-scrollbar {
         height: 100%;
+        width: 100%;
 
         .el-menu {
             background-color: $menu-bg-color;
             width: 100%;
             border-right: none;
 
-            // 折叠状态
-            &.el-menu--collapse {
-                width: $collapsed-width;
+            // // 折叠状态
+            // &.el-menu--collapse {
+            //     width: $collapsed-width;
 
-                h1 {
-                    display: none;
-                }
-            }
+            //     h1 {
+            //         display: none;
+            //     }
+            // }
 
             // 子菜单和菜单项通用样式
             .el-sub-menu {
@@ -250,31 +251,38 @@ $collapsed-width: 60px;
                     span {
                         color: rgb(255, 255, 255);
                     }
+
                     .el-icon {
                         color: rgb(64, 184, 130);
                     }
+
+                    &:hover {
+                        background-color: rgb(42, 89, 137.5);
+                        cursor: pointer;
+                        color: #000;
+                    }
                 }
-            }
+                .el-menu-item {
+                    color: rgb(255, 255, 255);
+                    background-color: rgb(37, 56, 78);
 
-            .el-menu-item {
-                color: rgba(255, 255, 255, 0.7);
+                    // 图标样式
+                    .el-icon {
+                        margin-right: 8px;
+                        font-size: 18px;
+                    }
 
-                &:hover {
-                    color: #fff;
-                    background-color: rgba(255, 255, 255, 0.1);
+                    &:hover {
+                        color: #a39a9a;
+                        background-color: rgb(50.8, 116.6, 184.5);
+                    }
+
+                    // 激活菜单项样式
+                    .is-active {
+                        color: #fff;
+                        background-color: rgba(24, 144, 255, 0.2);
+                    }
                 }
-
-                // 图标样式
-                .el-icon {
-                    margin-right: 8px;
-                    font-size: 18px;
-                }
-            }
-
-            // 激活菜单项样式
-            .el-menu-item.is-active {
-                color: #fff;
-                background-color: rgba(24, 144, 255, 0.2);
             }
         }
     }
@@ -309,23 +317,6 @@ $collapsed-width: 60px;
         padding: 0;
 
         h1 {
-            display: none;
-        }
-    }
-}
-
-// 响应式调整（可选）
-@media (max-width: 1200px) {
-    .el-aside {
-        width: 20%;
-    }
-}
-
-@media (max-width: 992px) {
-    .el-aside {
-        width: $collapsed-width;
-
-        .logo h1 {
             display: none;
         }
     }
