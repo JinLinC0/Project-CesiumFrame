@@ -1,12 +1,68 @@
+import MoonTrack from "@/assets/MoonTrack.png"
+import SunTrack from "@/assets/SunTrack.png"
+
+import Station from "@/assets/Station.png"
+import StationCoordinate from "@/assets/StationCoordinate.png"
+import SpecifyConnectionType from "@/assets/SpecifyConnectionType.png"
+
+import Vehicle from "@/assets/Vehicle.png"
+import Ship from "@/assets/Ship.png"
+import Aircraft from "@/assets/Aircraft.png"
+import RobotArmAnimation from "@/assets/RobotArmAnimation.png"
+import RealTimeDriver from "@/assets/RealTimeDriver.png"
+import CoordinateAxis from "@/assets/CoordinateAxis.png"
+import MovingTargets from "@/assets/MovingTargets.png"
+import MovingTargetsWebsocket from "@/assets/MovingTargetsWebsocket.png"
+import MovingTargetsSocketIO from "@/assets/MovingTargetsSocketIO.png"
+import ClickOnPath from "@/assets/ClickOnPath.png"
+import MissileLaunch from "@/assets/MissileLaunch.png"
+import MissileMobileLaunch from "@/assets/MissileMobileLaunch.png"
+import RocketLaunch from "@/assets/RocketLaunch.png"
+import RocketLaunchIntoOrbit from "@/assets/RocketLaunchIntoOrbit.png"
+
+import Point from "@/assets/Point.png"
+import Line from "@/assets/Line.png"
+import MultiLine from "@/assets/MultiLine.png"
+import Plane from "@/assets/Plane.png"
+import CirclesAndEllipses from "@/assets/CirclesAndEllipses.png"
+import ColumnBody from "@/assets/ColumnBody.png"
+import StraightArrow from "@/assets/StraightArrow.png"
+
+import TerminatorLine from "@/assets/TerminatorLine.png"
+import JingweiNetwork3D from "@/assets/JingweiNetwork3D.png"
+import SceneInfo from "@/assets/SceneInfo.png"
+import SceneScreenshot from "@/assets/SceneScreenshot.png"
+import JingweiNetwork2D from "@/assets/JingweiNetwork2D.png"
+import Dial from "@/assets/Dial.png"
+import Scile from "@/assets/Scile.png"
+import CircularSpaceGrid from "@/assets/CircularSpaceGrid.png"
+import RectangularSpaceGrid from "@/assets/RectangularSpaceGrid.png"
+import EarthCoordinate from "@/assets/EarthCoordinate.png"
+import SkyBox from "@/assets/SkyBox.png"
+import Mapx from "@/assets/Mapx.png"
+
+import ViewTrack from "@/assets/ViewTrack.png"
+import PerspectiveFly from "@/assets/PerspectiveFly.png"
+import CameraZoom from "@/assets/CameraZoom.png"
+
+import Rain from "@/assets/Rain.png"
+import Snow from "@/assets/Snow.png"
+import Fog from "@/assets/Fog.png"
+import WaterSurface from "@/assets/WaterSurface.png"
+
+import ConvertWGS84toECEF from "@/assets/ConvertWGS84toECEF.png"
+import ConvertECEFtoWGS84 from "@/assets/ConvertECEFtoWGS84.png"
+import DistanceTwoPoints from "@/assets/DistanceTwoPoints.png"
+
 // 太空任务
 export const elementSpaceMissionsMap = {
     月球轨道: {
         title: '月球轨道',
-        pngUrl: '/src/assets/MoonTrack.png'
+        pngUrl: MoonTrack
     },
     绕太阳: {
         title: '绕太阳',
-        pngUrl: '/src/assets/SunTrack.png'
+        pngUrl: SunTrack
     }
 }
 
@@ -14,15 +70,15 @@ export const elementSpaceMissionsMap = {
 export const elementStationMap = {
     添加测站: {
         title: '添加测站',
-        pngUrl: '/src/assets/Station.png'
+        pngUrl: Station
     },
     测站坐标系: {
         title: '测站坐标系',
-        pngUrl: '/src/assets/StationCoordinate.png'
+        pngUrl: StationCoordinate
     },
     指定连接类型: {
         title: '指定连接类型',
-        pngUrl: '/src/assets/SpecifyConnectionType.png'
+        pngUrl: SpecifyConnectionType
     }
 }
 
@@ -30,95 +86,95 @@ export const elementStationMap = {
 export const elementMovingMap = {
     车: {
         title: '车',
-        pngUrl: '/src/assets/Vehicle.png'
+        pngUrl: Vehicle
     },
     船: {
         title: '船',
-        pngUrl: '/src/assets/Ship.png'
+        pngUrl: Ship
     },
     飞机: {
         title: '飞机',
-        pngUrl: '/src/assets/Aircraft.png'
+        pngUrl: Aircraft
     },
     机械臂动画: {
         title: '机械臂动画',
-        pngUrl: '/src/assets/RobotArmAnimation.png'
+        pngUrl: RobotArmAnimation
     },
     实时驱动: {
         title: '实时驱动',
-        pngUrl: '/src/assets/RealTimeDriver.png'
+        pngUrl: RealTimeDriver
     },
     坐标轴: {
         title: '坐标轴',
-        pngUrl: '/src/assets/CoordinateAxis.png'
+        pngUrl: CoordinateAxis
     },
     大批量动目标: {
         title: '大批量动目标',
-        pngUrl: '/src/assets/MovingTargets.png'
+        pngUrl: MovingTargets
     },
     大批量动目标websocket: {
         title: '大批量动目标websocket',
-        pngUrl: '/src/assets/MovingTargetsWebsocket.png'
+        pngUrl: MovingTargetsWebsocket
     },
     大批量动目标socketIO: {
         title: '大批量动目标socketIO',
-        pngUrl: '/src/assets/MovingTargetsSocketIO.png'
+        pngUrl: MovingTargetsSocketIO
     },
     点选路径: {
         title: '点选路径',
-        pngUrl: '/src/assets/ClickOnPath.png'
+        pngUrl: ClickOnPath
     },
     导弹发射: {
         title: '导弹发射',
-        pngUrl: '/src/assets/MissileLaunch.png'
+        pngUrl: MissileLaunch
     },
     导弹机动发射: {
         title: '导弹机动发射',
-        pngUrl: '/src/assets/MissileMobileLaunch.png'
+        pngUrl: MissileMobileLaunch
     },
     火箭发射: {
         title: '火箭发射',
-        pngUrl: '/src/assets/RocketLaunch.png'
+        pngUrl: RocketLaunch
     },
     火箭发射卫星入轨: {
         title: '火箭发射卫星入轨',
-        pngUrl: '/src/assets/RocketLaunchIntoOrbit.png'
+        pngUrl: RocketLaunchIntoOrbit
     },
-    获取模型节点数: {
-        title: '获取模型节点数',
-        pngUrl: '/src/assets/RocketLaunchIntoOrbit.png'
-    }
+    // 获取模型节点数: {
+    //     title: '获取模型节点数',
+    //     pngUrl: '/src/assets/RocketLaunchIntoOrbit.png'
+    // }
 }
 
 // 图元
 export const elementGraphicMap = {
     点: {
         title: '点',
-        pngUrl: '/src/assets/Point.png'
+        pngUrl: Point
     },
     线: {
         title: '线',
-        pngUrl: '/src/assets/Line.png'
+        pngUrl: Line
     },
     多颜色线: {
         title: '多颜色线',
-        pngUrl: '/src/assets/MultiLine.png'
+        pngUrl: MultiLine
     },
     面: {
         title: '面',
-        pngUrl: '/src/assets/Plane.png'
+        pngUrl: Plane
     },
     椭圆: {
         title: '椭圆',
-        pngUrl: '/src/assets/CirclesAndEllipses.png'
+        pngUrl: CirclesAndEllipses
     },
     盒子: {
         title: '盒子',
-        pngUrl: '/src/assets/ColumnBody.png'
+        pngUrl: ColumnBody
     },
     直线箭头: {
         title: '直线箭头',
-        pngUrl: '/src/assets/StraightArrow.png'
+        pngUrl: StraightArrow
     }
 }
 
@@ -126,51 +182,51 @@ export const elementGraphicMap = {
 export const elementSceneSetMap = {
     晨昏线: {
         title: '晨昏线',
-        pngUrl: '/src/assets/TerminatorLine.png'
+        pngUrl: TerminatorLine
     },
     经纬网络3D: {
         title: '经纬网络3D',
-        pngUrl: '/src/assets/JingweiNetwork3D.png'
+        pngUrl: JingweiNetwork3D
     },
     场景信息: {
         title: '场景信息',
-        pngUrl: '/src/assets/SceneInfo.png'
+        pngUrl: SceneInfo
     },
     场景截图: {
         title: '场景截图',
-        pngUrl: '/src/assets/SceneScreenshot.png'
+        pngUrl: SceneScreenshot
     },
     经纬网络2D: {
         title: '经纬网络2D',
-        pngUrl: '/src/assets/JingweiNetwork2D.png'
+        pngUrl: JingweiNetwork2D
     },
     时间盘: {
         title: '时间盘',
-        pngUrl: '/src/assets/Dial.png'
+        pngUrl: Dial
     },
     刻度盘: {
         title: '刻度盘',
-        pngUrl: '/src/assets/Scile.png'
+        pngUrl: Scile
     },
     圆形空间网格: {
         title: '圆形空间网格',
-        pngUrl: '/src/assets/CircularSpaceGrid.png'
+        pngUrl: CircularSpaceGrid
     },
     矩形空间网格: {
         title: '矩形空间网格',
-        pngUrl: '/src/assets/RectangularSpaceGrid.png'
+        pngUrl: RectangularSpaceGrid
     },
     地球坐标系: {
         title: '地球坐标系',
-        pngUrl: '/src/assets/EarthCoordinate.png'
+        pngUrl: EarthCoordinate
     },
     天空盒: {
         title: '天空盒',
-        pngUrl: '/src/assets/SkyBox.png'
+        pngUrl: SkyBox
     },
     鹰眼图: {
         title: '鹰眼图',
-        pngUrl: '/src/assets/Mapx.png'
+        pngUrl: Mapx
     }
 }
 
@@ -178,15 +234,15 @@ export const elementSceneSetMap = {
 export const elementCameraMap = {
     跟踪视角: {
         title: '跟踪视角',
-        pngUrl: '/src/assets/ViewTrack.png'
+        pngUrl: ViewTrack
     },
     视角飞行: {
         title: '视角飞行',
-        pngUrl: '/src/assets/PerspectiveFly.png'
+        pngUrl: PerspectiveFly
     },
     相机缩放: {
         title: '相机缩放',
-        pngUrl: '/src/assets/CameraZoom.png'
+        pngUrl: CameraZoom
     }
 }
 
@@ -194,19 +250,19 @@ export const elementCameraMap = {
 export const elementWeatherMap = {
     雨: {
         title: '雨',
-        pngUrl: '/src/assets/Rain.png'
+        pngUrl: Rain
     },
     雪: {
         title: '雪',
-        pngUrl: '/src/assets/Snow.png'
+        pngUrl: Snow
     },
     雾: {
         title: '雾',
-        pngUrl: '/src/assets/Fog.png'
+        pngUrl: Fog
     },
     水面: {
         title: '水面',
-        pngUrl: '/src/assets/WaterSurface.png'
+        pngUrl: WaterSurface
     }
 }
 
@@ -214,26 +270,26 @@ export const elementWeatherMap = {
 export const elementAlgorithmMap = {
     经纬高转地固XYZ: {
         title: '经纬高转地固XYZ',
-        pngUrl: '/src/assets/ConvertWGS84toECEF.png'
+        pngUrl: ConvertWGS84toECEF
     },
     地固XYZ转经纬高: {
         title: '地固XYZ转经纬高',
-        pngUrl: '/src/assets/ConvertECEFtoWGS84.png'
+        pngUrl: ConvertECEFtoWGS84
     },
     UTC时间转JulianDate: {
         title: 'UTC时间转JulianDate',
-        pngUrl: '/src/assets/DistanceTwoPoints.png'
+        pngUrl: DistanceTwoPoints
     },
     JulianDate转UTC时间 : {
         title: 'JulianDate转UTC时间 ',
-        pngUrl: '/src/assets/DistanceTwoPoints.png'
+        pngUrl: DistanceTwoPoints
     },
     计算点到直线的距离: {
         title: '计算点到直线的距离',
-        pngUrl: '/src/assets/DistanceTwoPoints.png'
+        pngUrl: DistanceTwoPoints
     },
     计算两点间距离: {
         title: '计算两点间距离',
-        pngUrl: '/src/assets/DistanceTwoPoints.png'
+        pngUrl: DistanceTwoPoints
     },
 }
